@@ -132,7 +132,22 @@ The data you will soon import requires a set of Splunk plugins. You now need to 
    ```bash
    wget https://botsdataset.s3.amazonaws.com/botsv3/botsv3_data_set.tgz
    ```
-9. Install the data set:
+9. Install tar to extract the data set:
    ```bash
-   
-11. 
+   sudo dnf install tar -y
+   ```
+11. Install the data:
+   ```bash
+   sudo tar zxvf botsv3_data_set.tgz -C /opt/splunk/etc/apps/
+   ```
+12. Change the permissions of the installed data:
+   ```bash
+   sudo chown -R splunk /opt/splunk
+   ```
+13. Restart Splunk:
+    ```bash
+    sudo systemctl restart Splunkd.service
+    ```
+15. Log back into Splunk.
+16. Click "Search & Reporting".
+17. Perform the following search: `index="botsv3" earliest=0`. This will take some time to process the data.
