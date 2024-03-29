@@ -149,5 +149,5 @@ The data you will soon import requires a set of Splunk plugins. You now need to 
     sudo systemctl restart Splunkd.service
     ```
 15. Log back into Splunk.
-16. Click "Search & Reporting".
-17. Perform the following search: `index="botsv3" earliest=0`. This will take some time to process the data.
+16. Click "**Search & Reporting**".
+17. Perform the following search to confirm the data is working as expected: `index="botsv3" earliest=0`. It will take some time to process the data.
