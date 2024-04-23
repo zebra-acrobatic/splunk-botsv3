@@ -1,8 +1,8 @@
-# splunk-botsv3
+# Splunk and BOTSv3 installation
 Simplified instructions for installing Splunk and BOTSv3 data.
 
 ## Source ##
-Original instructions can be found [here](https://github.com/splunk/botsv3):
+Original instructions for BOTSv3 can be found [here](https://github.com/splunk/botsv3):
 
 ## Step 1: Prepare a VM ##
 You will require a Linux machine to follow the below instructions.
