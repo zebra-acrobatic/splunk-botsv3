@@ -86,7 +86,7 @@ You will need to aquire Splunk.
     ```
     If you see the error `useradd: cannot create directory /opt/splunk`, reinstall Splunk:
     ```bash
-    sudo dnf reinstall splunk
+    sudo dnf reinstall splunk.x.y.z
     ```
 13. Start Splunk and follow the inststructions (_do not forget the details_):
     ```bash
